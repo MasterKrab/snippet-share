@@ -71,8 +71,10 @@ const Menu = () => {
           transition: transform 0.2s ease-in-out;
         }
 
-        .menu__item:hover::before {
-          transform: scaleX(1);
+        @media (hover: hover) {
+          .menu__item:hover::before {
+            transform: scaleX(1);
+          }
         }
 
         .menu__item--left {

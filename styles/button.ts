@@ -11,12 +11,12 @@ const button = css`
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
   }
 
-  @media hover(hover) {
+  @media (hover: hover) {
     button {
       transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     }
 
-    button:hover {
+    button:hover:not(:disabled) {
       background-color: var(--active-color);
       color: var(--primary-color);
     }
