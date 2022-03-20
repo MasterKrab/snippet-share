@@ -19,17 +19,17 @@ const accountForm = css`
   }
 
   .form__input {
-    padding: 0.25rem 1rem;
+    padding: 0.5rem 1rem;
     border: none;
     width: 100%;
     max-width: 300px;
   }
 
   .form__submit {
-    background-color: var(--secondary-color);
-    padding: 0.25rem 1.5rem;
-    margin-top: 0.5rem;
-    border-radius: 0.25rem;
+    padding: 0.4rem 0.75rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
   }
 
   .form__error {

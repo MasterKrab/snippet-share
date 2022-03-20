@@ -46,7 +46,7 @@ const Form = ({
       }
 
       .select {
-        padding: 0.5rem 0.75rem;
+        padding: 0.5rem 1.25rem;
         border-radius: 0.5rem;
       }
     `}</style>

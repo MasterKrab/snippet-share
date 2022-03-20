@@ -7,6 +7,7 @@ import getRequestConfig from 'utils/getRequestConfig'
 import type User from 'types/user'
 import accountForm from 'styles/accountForm'
 import resetButton from 'styles/resetButton'
+import button from 'styles/button'
 
 interface FormData {
   old_password: string
@@ -103,6 +104,7 @@ const PasswordForm = () => {
       </form>
       <style jsx>{accountForm}</style>
       <style jsx>{resetButton}</style>
+      <style jsx>{button}</style>
     </>
   )
 }

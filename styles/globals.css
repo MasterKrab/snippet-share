@@ -1,9 +1,10 @@
 :root {
-  --primary-color: #282a36;
-  --primary-color-light: #3d3f4e;
-  --secondary-color: hsl(60, 30%, 96%);
-  --active-color: #50fa7b;
+  --primary-color: hsl(60, 30%, 96%);
+  --primary-color-light: rgb(255, 255, 255);
+  --secondary-color: #282a36;
+  --active-color: royalblue;
   --danger-color: #ff5555;
+  --green-color: #50fa7b;
 }
 
 html {

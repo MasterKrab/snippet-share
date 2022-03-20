@@ -35,9 +35,7 @@ const Avatar = () => {
           display: inline-flex;
           justify-content: center;
           align-items: center;
-          background-color: var(--secondary-color);
           padding: 0.35rem;
-          border-radius: 50%;
         }
       `}</style>
     </>

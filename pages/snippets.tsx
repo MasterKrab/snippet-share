@@ -5,7 +5,6 @@ import type Snippet from 'types/snippet'
 import Loading from 'components/Loading'
 import SnippetItem from 'components/SnippetItem'
 import resetList from 'styles/resetList'
-import isBrowser from 'utils/isBrowser'
 
 const Snippets = () => {
   const { data, isLoading } = useFetchData<Snippet[]>(
@@ -23,8 +22,13 @@ const Snippets = () => {
         {isLoading ? (
           <Loading />
         ) : data?.length ? (
-          data.map(({ id, created_at }) => (
-            <SnippetItem key={id} id={id} created_at={created_at} />
+          data.map(({ id, created_at, updated_at }) => (
+            <SnippetItem
+              key={id}
+              id={id}
+              created_at={created_at}
+              updated_at={updated_at}
+            />
           ))
         ) : (
           <li>No snippets yet</li>

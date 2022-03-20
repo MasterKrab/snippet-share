@@ -1,5 +1,6 @@
 import { useContext } from 'react'
 import UserContext from 'context/User/context'
+import { IconContext } from 'react-icons'
 import { FaInfoCircle, FaGrinAlt } from 'react-icons/fa'
 import getRandomElement from 'utils/getRandomElement'
 
@@ -20,16 +21,24 @@ const UserMessage = () => {
   return (
     <>
       <p className="text">
-        {user ? (
-          <>
-            <FaGrinAlt />{' '}
-            {getRandomElement(USER_MESSAGES).replace('{user}', user.username)}
-          </>
-        ) : (
-          <>
-            <FaInfoCircle /> {NO_USER_MESSAGE}
-          </>
-        )}
+        <IconContext.Provider
+          value={{
+            style: {
+              color: user ? 'var(--green-color)' : 'var(--primary-color)',
+            },
+          }}
+        >
+          {user ? (
+            <>
+              <FaGrinAlt />{' '}
+              {getRandomElement(USER_MESSAGES).replace('{user}', user.username)}
+            </>
+          ) : (
+            <>
+              <FaInfoCircle /> {NO_USER_MESSAGE}
+            </>
+          )}
+        </IconContext.Provider>
       </p>
       <style jsx>{`
         .text {

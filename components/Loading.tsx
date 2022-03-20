@@ -39,7 +39,7 @@ const Loading = ({ box = false }) => (
       .spinner {
         width: 5rem;
         height: 5rem;
-        border: 0.5rem solid var(--secondary-color);
+        border: 0.5rem solid transparent;
         border-right-color: var(--active-color);
         border-radius: 50%;
         animation: spinner 0.75s linear infinite;

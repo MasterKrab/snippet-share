@@ -5,7 +5,7 @@ const form = css`
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: var(--primray-color-light);
     width: 95%;
     max-width: 500px;
     padding: 1.25rem;
@@ -14,8 +14,7 @@ const form = css`
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 0.5rem;
-    color: var(--primary-color);
-    box-shadow: 0 0.25rem 1rem rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.25);
   }
 
   .form__title {
@@ -34,7 +33,7 @@ const form = css`
     width: 100%;
     font-weight: 500;
     border: none;
-    border-bottom: 2px solid var(--primary-color-light);
+    border-bottom: 2px solid var(--secondary-color);
   }
 
   .form__input::placeholder {
@@ -52,7 +51,6 @@ const form = css`
     position: absolute;
     top: -1rem;
     left: 0;
-    background-color: var(--secondary-color);
     width: 100%;
     transform: translateY(-100%);
     font-size: 1rem;
@@ -61,12 +59,10 @@ const form = css`
   }
 
   .form__submit {
-    background-color: var(--primary-color-light);
     width: min-content;
     margin-top: 0.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    color: var(--secondary-color);
   }
 `
 
