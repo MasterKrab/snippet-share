@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import dynamic from 'next/dynamic'
 import 'codemirror/lib/codemirror.css'
 import 'codemirror/theme/dracula.css'
